@@ -6,7 +6,6 @@ body {
     min-height: 100vh;
     background-image: linear-gradient(to bottom right, #ff7f50, #ffb6c1, #f0f8ff);
     background-size: cover;
-    flex-direction: column; /* تغيير اتجاه flexbox إلى العمودي */
 }
 
 .container {
@@ -39,29 +38,18 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-footer {
-    background-color: #f0f0f0; 
-    padding: 20px;
-    text-align: center; /*  تغيير محاذاة النص إلى اليمين */
-    margin-top: 20px;
-}
-
-footer a {
-    color: #007bff; 
-    text-decoration: none; 
+    margin-bottom: 20px; /*  إضافة تباعد أسفل الزر  */
 }
 
 .contact {
+    text-align: center;
     margin: 10px 0; 
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px; /*  إضافة حدود  */
 }
 
-/*  تصميم لـ  footer  */
-footer {
-    display: flex; /*  تفعيل  flexbox  للـ  footer  */
-    justify-content: center; /*  تحديد محاذاة المحتوى إلى اليمين */
-    width: 100%; /*  عرض  footer  بمليء الشاشة  */
-    position: fixed; /*  جعل  footer  ثابتًا  */
-    bottom: 0; /*  وضع  footer  في أسفل الصفحة  */
+.contact a {
+    color: #007bff;
+    text-decoration: none; 
 }
