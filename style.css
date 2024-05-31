@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: linear-gradient(to bottom right, #ff7f50, #ffb6c1, #f0f8ff); /* تدرج متعدد الألوان */
+    background-image: linear-gradient(to bottom right, #ff7f50, #ffb6c1, #f0f8ff); 
     background-size: cover;
 }
 
@@ -48,4 +48,9 @@ footer {
 footer a {
     color: #007bff; /* لون للرابط */
     text-decoration: none; /* إزالة خط تحت الرابط */
+}
+
+.contact {
+    text-align: center; /* مركز النص */
+    margin: 10px 0; /* تباعد أعلى وأسفل */
 }
