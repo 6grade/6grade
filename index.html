@@ -1,36 +1,51 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>حاسبة معدل الطلاب</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>حاسبة معدل الطلاب</h1>
-        <div>
-            <label for="sixthGrade">معدل الصف السادس:</label>
-            <input type="number" id="sixthGrade" required>
-        </div>
-        <div>
-            <label for="fourthGrade">معدل الصف الرابع:</label>
-            <input type="number" id="fourthGrade" required>
-        </div>
-        <div>
-            <label for="fifthGrade">معدل الصف الخامس:</label>
-            <input type="number" id="fifthGrade" required>
-        </div>
-        <button onclick="calculateAverage()">احسب المعدل</button>
-        <p id="result"></p>
-    </div>
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right, #707070, #909090, #b0b0b0); /* تدرج رمادي */
+    background-size: cover;
+}
 
-    <footer>
-        <p>اتصل بنا على Telegram:</p>
-        <p>اسم المستخدم: <a href="https://t.me/ali_me09">@ali_me09</a></p>
-        <p>رابط المجموعة: <a href="https://t.me/S12tudent">https://t.me/S12tudent</a></p>
-    </footer>
-    
-    <script src="script.js"></script>
-</body>
-</html>
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 200px; /* ضبط عرض الحقول */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* لون أخضر */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #f0f0f0; /* لون رمادي فاتح للقدم */
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #007bff; /* لون للرابط */
+    text-decoration: none; /* إزالة خط تحت الرابط */
+}
