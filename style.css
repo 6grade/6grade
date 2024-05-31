@@ -4,8 +4,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: linear-gradient(to bottom right, #ff7f50, #ffb6c1, #f0f8ff); 
+    background-image: linear-gradient(to bottom right, #ff7f50, #ffb6c1, #f0f8ff);
     background-size: cover;
+    flex-direction: column; /* تغيير اتجاه flexbox إلى العمودي */
 }
 
 .container {
@@ -14,6 +15,8 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
+    width: 80%; /* تحديد عرض الحاوية */
+    max-width: 500px; /* حد أقصى لعرض الحاوية */
 }
 
 h1 {
@@ -26,12 +29,12 @@ input[type="number"] {
     border-radius: 5px;
     margin-bottom: 10px;
     width: 100%;
-    max-width: 200px; /* ضبط عرض الحقول */
+    max-width: 200px; 
 }
 
 button {
     padding: 10px 20px;
-    background-color: #4CAF50; /* لون أخضر */
+    background-color: #4CAF50; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -39,18 +42,26 @@ button {
 }
 
 footer {
-    background-color: #f0f0f0; /* لون رمادي فاتح للقدم */
+    background-color: #f0f0f0; 
     padding: 20px;
-    text-align: center;
+    text-align: center; /*  تغيير محاذاة النص إلى اليمين */
     margin-top: 20px;
 }
 
 footer a {
-    color: #007bff; /* لون للرابط */
-    text-decoration: none; /* إزالة خط تحت الرابط */
+    color: #007bff; 
+    text-decoration: none; 
 }
 
 .contact {
-    text-align: center; /* مركز النص */
-    margin: 10px 0; /* تباعد أعلى وأسفل */
+    margin: 10px 0; 
+}
+
+/*  تصميم لـ  footer  */
+footer {
+    display: flex; /*  تفعيل  flexbox  للـ  footer  */
+    justify-content: center; /*  تحديد محاذاة المحتوى إلى اليمين */
+    width: 100%; /*  عرض  footer  بمليء الشاشة  */
+    position: fixed; /*  جعل  footer  ثابتًا  */
+    bottom: 0; /*  وضع  footer  في أسفل الصفحة  */
 }
