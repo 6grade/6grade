@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: linear-gradient(to bottom right, #f0f0f0, #c0c0c0);
+    background-image: linear-gradient(to bottom right, #ff7f50, #ffb6c1, #f0f8ff); /* تدرج متعدد الألوان */
     background-size: cover;
 }
 
@@ -26,14 +26,26 @@ input[type="number"] {
     border-radius: 5px;
     margin-bottom: 10px;
     width: 100%;
-    max-width: 200px; /*  ضبط عرض الحقول */
+    max-width: 200px; /* ضبط عرض الحقول */
 }
 
 button {
     padding: 10px 20px;
-    background-color: #4CAF50; 
+    background-color: #4CAF50; /* لون أخضر */
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+footer {
+    background-color: #f0f0f0; /* لون رمادي فاتح للقدم */
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #007bff; /* لون للرابط */
+    text-decoration: none; /* إزالة خط تحت الرابط */
 }
