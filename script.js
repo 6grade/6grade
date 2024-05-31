@@ -5,5 +5,5 @@ function calculateAverage() {
 
     let finalAverage = (sixthGrade * 0.8) + (fourthGrade * 0.1) + (fifthGrade * 0.1);
 
-    document.getElementById("result").innerHTML = "المعدل النهائي: " + finalAverage;
+    document.getElementById("result").innerHTML = "المعدل النهائي: " + finalAverage.toFixed(2); //  التقريب إلى منزلتين عشريتين
 }
