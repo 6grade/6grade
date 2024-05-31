@@ -1,4 +1,31 @@
 body {
     font-family: sans-serif;
+    display: flex; /*  لتمركز المحتوى */
+    justify-content: center; /*  لمركز المحتوى أفقيًا */
+    align-items: center; /*  لمركز المحتوى رأسيًا */
+    min-height: 100vh; /*  لجعل خلفية الشاشة ممتدة */
+    background-image: linear-gradient(to bottom right, #f0f0f0, #c0c0c0); /* خلفية ضبابية */
+    background-size: cover; /* تغطية الخلفية بالكامل */
+}
+
+h1 {
     text-align: center;
+    margin-bottom: 20px;
+}
+
+/*  إضافة بعض التصميمات للحدود  */
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* لون أخضر */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
