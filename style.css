@@ -1,29 +1,37 @@
 body {
     font-family: sans-serif;
-    display: flex; /*  لتمركز المحتوى */
-    justify-content: center; /*  لمركز المحتوى أفقيًا */
-    align-items: center; /*  لمركز المحتوى رأسيًا */
-    min-height: 100vh; /*  لجعل خلفية الشاشة ممتدة */
-    background-image: linear-gradient(to bottom right, #f0f0f0, #c0c0c0); /* خلفية ضبابية */
-    background-size: cover; /* تغطية الخلفية بالكامل */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right, #f0f0f0, #c0c0c0);
+    background-size: cover;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
     margin-bottom: 20px;
 }
 
-/*  إضافة بعض التصميمات للحدود  */
 input[type="number"] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 10px;
+    width: 100%;
+    max-width: 200px; /*  ضبط عرض الحقول */
 }
 
 button {
     padding: 10px 20px;
-    background-color: #4CAF50; /* لون أخضر */
+    background-color: #4CAF50; 
     color: white;
     border: none;
     border-radius: 5px;
