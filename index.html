@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حاسبة معدل الطلاب</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>حاسبة معدل الطلاب</h1>
+    <div>
+        <label for="sixthGrade">معدل الصف السادس:</label>
+        <input type="number" id="sixthGrade" required>
+    </div>
+    <div>
+        <label for="fourthGrade">معدل الصف الرابع:</label>
+        <input type="number" id="fourthGrade" required>
+    </div>
+    <div>
+        <label for="fifthGrade">معدل الصف الخامس:</label>
+        <input type="number" id="fifthGrade" required>
+    </div>
+    <button onclick="calculateAverage()">احسب المعدل</button>
+    <p id="result"></p>
+    <script src="script.js"></script>
+</body>
+</html>
